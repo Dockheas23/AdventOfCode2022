@@ -15,6 +15,7 @@ mod q13;
 mod q14;
 mod q15;
 mod q16;
+mod q17;
 
 fn print_result(number: u8, part1: &impl ToString, part2: &impl ToString) {
     println!("Question {:}", number);
@@ -44,5 +45,6 @@ fn main() -> std::io::Result<()> {
     print_result(14, &q14::part_1()?, &q14::part_2()?);
     print_result(15, &q15::part_1()?, &q15::part_2()?);
     print_result(16, &q16::part_1()?, &q16::part_2()?);
+    print_result(17, &q17::part_1()?, &q17::part_2()?);
     Ok(())
 }
